@@ -1,0 +1,20 @@
+﻿<Window x:Name="win" x:Class="MyWidgets.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MyWidgets"
+        mc:Ignorable="d"
+        Title="WidgetWindow" Height="100" Width="280"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        ResizeMode="NoResize"
+        Background="#50000000"
+        ShowInTaskbar="False" MouseDown="Window_MouseDown" Topmost="True" MouseWheel="Window_MouseWheel" >
+    <Grid Background="#00FFFFFF">
+        <Label x:Name="Time" Content="00:00:00" HorizontalAlignment="Left" Margin="10,20,0,41" VerticalAlignment="Center" Height="39" Width="123" FontFamily="Segoe UI Light" Foreground="White" FontSize="23"/>
+        <Label x:Name="TimeText" Content="Текущее время" HorizontalAlignment="Left" Margin="10,49,0,23" VerticalAlignment="Center" Height="28" Width="123" FontFamily="Segoe UI Light" Foreground="#FFCCEA44" FontSize="13"/>
+        <Label x:Name="Weather" Content="0" HorizontalAlignment="Left" Margin="157,19,0,42" VerticalAlignment="Center" Height="39" Width="106" FontFamily="Segoe UI Light" Foreground="White" FontSize="23"/>
+        <Label x:Name="WeatherText" Content="Погода в Омске" HorizontalAlignment="Left" Margin="157,49,0,23" VerticalAlignment="Center" Height="28" Width="123" FontFamily="Segoe UI Light" Foreground="#FF4497EA" FontSize="13"/>
+    </Grid>
+</Window>
